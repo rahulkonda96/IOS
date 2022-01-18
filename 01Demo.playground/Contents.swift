@@ -43,3 +43,21 @@ print(1,2,3,4,5,6, separator: "-")
 
 print("The new pattern is", terminator: " ")
 print(1,2,3,4,5,6, separator: "-")
+
+
+var cricketKit = ("handGloves" ,"helmet",("bat","ball",("test","hi")))
+print(cricketKit.0)
+print(cricketKit.1)
+print(cricketKit.2)
+print(cricketKit.2.0)
+print(cricketKit.2.1)
+print(cricketKit.2.2.0)
+
+let groceries = ("bread",1)
+print(groceries.0)
+print(groceries.1)
+print(type (of: groceries))
+
+var origin = (0, 0)
+var point = origin
+print(point)
