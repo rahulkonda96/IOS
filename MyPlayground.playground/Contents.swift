@@ -85,3 +85,34 @@ for i in 1...C
 }
 
 print("------------------------------------------------------------")
+
+
+var str = "Konda"
+if (str.hasPrefix("A")) {
+    print("\(str)")
+}
+else{
+    print("A\(str)")
+}
+print("------------------------------------------------------------")
+
+var str1 = "north"
+let str2 = str1[str1.index(before: str1.endIndex)]
+let str3 = str1
+let str4 = str1[str1.startIndex]
+print("\(str2)\(str3)\(str4)")
+print("------------------------------------------------------------")
+
+var st = "Swift"
+print("\(String(st.reversed()))")
+print("------------------------------------------------------------")
+
+
+var myString = "ababa"
+myString.remove(at: myString.firstIndex())
+if (myString[myString.index(before: myString.endIndex)] == myString[myString.startIndex]){
+    print("\(myString)k")
+}
+else{
+    print("\(myString)")
+}
