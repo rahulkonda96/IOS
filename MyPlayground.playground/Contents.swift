@@ -170,8 +170,7 @@ print("------------------------------------------------------------")
 var str1 = "north"
 let str2 = str1[str1.index(before: str1.endIndex)]
 let str3 = str1
-let str4 = str1[str1.startIndex]
-print("\(str2)\(str3)\(str4)")
+print("\(str2)\(str3)\(str2)")
 print("------------------------------------------------------------")
 
 //5.c) Declare a String Swift and print them in the reverse order.
