@@ -6,7 +6,7 @@ When you open this file  in Xcode, it is normal that you see errors in the sourc
 //**************** QUESTION 1 ****************
 // 1.a) Declare a variable called  distance of type Double, using type annotation
 var distance: Double = 56.2
-var name = "Konda"
+var name: String = "Konda"
 
 // 1.b) Declare a constant called  maxWeight of type an Int, with a value of 130, using type annotation
 var maxWeight: Int = 130
@@ -42,8 +42,8 @@ print("Throws an error because both variables are of different datatypes")
 
 // 2.b) Fix the error in the question 2.a
 //Commented the above lines to remove the errors by reusing the same variables
-var x = 15
-var y = 25
+var x : Int = 15
+var y : Int = 25
 y=x
 print("------------------------------------------------------------")
 
@@ -55,9 +55,9 @@ print("------------------------------------------------------------")
 
 //**************** QUESTION 3 ****************
 //3.a) Declare three constants x, y, z and assign the values 2, 7, 5. Write a swift code to find the largest number among the three integers.
-var a1 = 2
-var a2 = 7
-var a3 = 5
+var a1: Int = 2
+var a2: Int = 7
+var a3: Int = 5
 x = a1
 y = a2
 var z = a3
@@ -76,8 +76,8 @@ else
 print("------------------------------------------------------------")
 
 //3.b) Declare 2 variables a,b and assign values 13, 103. Write a swift code to check whether the last digit of the two given  integer values are same or not.
-var a = 13
-var b = 103
+var a: Int = 13
+var b: Int = 103
 
 var c = a%10
 var d = b%100
@@ -102,8 +102,8 @@ print("------------------------------------------------------------")
 //4.a) Print the numbers 1 to N in alternative order, one number from the left side (starting with one) and one number from the right side (starting from N down to 1)
 //Decalare var N = 10
 //expected output is 1 10 2 9 3 8 4 7 5 6
-var N = 10
-var i = 1
+var N: Int = 10
+var i: Int = 1
 var j = N
 while (i<j){
     print("\(i) \(j)", terminator: " ")
@@ -126,7 +126,7 @@ print("------------------------------------------------------------")
 //  *****
 //   ***
 //    *
-var C = 5
+var C: Int = 5
 //var m = 1
 for i in 1...C
 {
@@ -157,7 +157,7 @@ print("------------------------------------------------------------")
 //**************** QUESTION 5 ****************
 // Using Strings
 //5.a) Declare a String and assign the value of your own, Write a Swift code to add "A" in front of the string and print it. If the string already begins with "A", then simply print it.
-var str = "Konda"
+var str: String = "Konda"
 if (str.hasPrefix("A")) {
     print("\(str)")
 }
@@ -167,14 +167,14 @@ else{
 print("------------------------------------------------------------")
 
 //5.b) Declare a String str1 and and assign the value of your own. Write a swift code to add the last character at the front and back of the given string and print it.
-var str1 = "north"
+var str1: String = "north"
 let str2 = str1[str1.index(before: str1.endIndex)]
 let str3 = str1
 print("\(str2)\(str3)\(str2)")
 print("------------------------------------------------------------")
 
 //5.c) Declare a String Swift and print them in the reverse order.
-var st = "Swift"
+var st: String = "Swift"
 print("\(String(st.reversed()))")
 print("------------------------------------------------------------")
 
@@ -182,7 +182,7 @@ print("------------------------------------------------------------")
 //5.d) Write a Swift code  to check if the first or last characters are 'a' of a given string, return the given string without those 'a' characters in the first and last, otherwise return the given string.
  //declare var myString1 = "ababa"
  //expected output bab
-var myString = "ababa"
+var myString: String = "ababa"
 if (myString[myString.index(before: myString.endIndex)] == "a" && myString[myString.startIndex] == "a"){
     myString.removeLast()
     myString.removeFirst()
@@ -195,4 +195,6 @@ else{
 //**************** END OF QUESTION 5 ****************
 
  
+
+
 
